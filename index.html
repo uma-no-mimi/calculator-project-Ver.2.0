@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>電卓アプリ</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="module" src="/src/main.ts"></script>
+</head>
+
+<body>
+  <!-- 電卓UI -->
+  <div class="calculator">
+    <!-- ディスプレイ領域 -->
+    <div class="display-container">
+      <div class="history" id="history"></div>
+      <div class="display" id="display">0</div>
+    </div>
+    <!-- ボタン領域 (0～9,四則演算,.,C) -->
+    <div class="buttons">
+      <button class="btn" data-key="7">7</button>
+      <button class="btn" data-key="8">8</button>
+      <button class="btn" data-key="9">9</button>
+      <button class="btn operator" data-key="operator:/">÷</button>
+
+      <button class="btn" data-key="4">4</button>
+      <button class="btn" data-key="5">5</button>
+      <button class="btn" data-key="6">6</button>
+      <button class="btn operator" data-key="operator:*">×</button>
+
+      <button class="btn" data-key="1">1</button>
+      <button class="btn" data-key="2">2</button>
+      <button class="btn" data-key="3">3</button>
+      <button class="btn operator" data-key="operator:-">−</button>
+
+      <button class="btn" data-key="0">0</button>
+      <button class="btn" data-key="decimal">.</button>
+      <button class="btn clear" data-key="clear">C</button>
+      <button class="btn operator" data-key="operator:+">+</button>
+
+      <!-- イコールボタン -->
+      <button class="btn equal" data-key="equal">=</button>
+    </div>
+    <!-- 直接入力 -->
+
+  </div>
+</body>
+
+</html>
